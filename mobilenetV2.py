@@ -94,6 +94,3 @@ model.save('MObilenetV1.h5')
 
 ##prediction
 
-img=model.predict(X_train[10:11],verbose=1)
-pred = (img>0.5).astype(np.uint8)
-plt.imshow(np.squeeze(pred))
